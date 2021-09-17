@@ -137,6 +137,7 @@ button > * {
 
 .lower-section .lower-section-title {
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .lower-section .individual-item a {
