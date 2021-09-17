@@ -1,0 +1,156 @@
+:root {
+  --brand-color: #462681;
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+  color: var(--brand-color);
+}
+
+/* header  */
+.header-container {
+  width: 100%;
+  position: relative;
+}
+
+.header-container img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.back-btn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: white;
+}
+
+.back-btn,
+button > * {
+  margin: 0px 8px;
+}
+
+.back-btn img {
+  max-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .header-container img {
+    object-position: center top;
+  }
+}
+
+/* main  */
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-header > div {
+  display: flex;
+  width: 100%;
+}
+
+.header-title {
+  justify-content: space-between;
+}
+
+.header-title h1 {
+  color: var(--brand-color);
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.header-body {
+  justify-content: flex-start;
+}
+
+.information-container {
+  padding: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -56px;
+  position: relative;
+  background: #fff;
+}
+
+.header-body button {
+  justify-content: flex-start;
+  padding-left: 0px;
+}
+
+.header-body button > * {
+  margin-left: 0px;
+}
+
+/* statistics section  */
+
+.statistics {
+  border-top: 1px solid var(--brand-color);
+  border-bottom: 1px solid var(--brand-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.statistics .individual-item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+}
+
+.statistics .individual-item .item-top {
+  font-size: 24px;
+}
+
+.statistics .individual-item .item-bottom {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* categories */
+
+.lower-section {
+  padding: 16px 0px;
+}
+
+.lower-section .lower-section-title {
+  margin-bottom: 24px;
+}
+
+.lower-section .individual-item a {
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0px;
+  align-items: center;
+}
+
+.lower-section .individual-item a {
+  text-decoration: none;
+}
+
+.lower-section .individual-item img {
+  color: var(--brand-color);
+}
